@@ -1,0 +1,74 @@
+[
+    {
+        "id": "89ec0a45-a3ce-44ac-94c5-1538c3a2f62a",
+        "name": "Todo List",
+        "items": [
+            {
+                "id": "0f005e2d-7799-48c0-91ef-e76a9b56be0e",
+                "name": "First",
+                "description": "Duis laboris excepteur veniam sint non minim enim aliquip elit aliquip qui cillum et do incididunt veniam.",
+                "type": "TODO"
+            },
+            {
+                "id": "0f88b4ff-0df9-465e-8c77-b3e1a601620e",
+                "name": "Second",
+                "description": "Amet anim veniam aliquip tempor ad nisi ea adipisicing esse magna exercitation mollit nostrud id.",
+                "type": "TODO"
+            }
+        ]
+    },
+    {
+        "id": "0aaa689a-5f4a-4d8c-ab06-a6c1222c6451",
+        "name": "Links",
+        "items": [
+            {
+                "id": "3f08fa4e-f1e0-4021-8a06-5a9961504fdc",
+                "name": "Third",
+                "description": "Lorem proident aute elit pariatur labore anim ut officia dolore veniam labore eiusmod occaecat enim.",
+                "type": "LINK"
+            },
+            {
+                "id": "fb065fa9-33ec-431b-9adc-df167903f6f1",
+                "name": "Fourth",
+                "description": "Aute consectetur adipisicing enim amet aliqua officia tempor eiusmod occaecat proident pariatur aute amet magna.",
+                "type": "LINK"
+            },
+            {
+                "id": "a8ebbe8b-2344-43d0-ba0e-2ad4901008cd",
+                "name": "Fifth",
+                "description": "Sit irure nostrud in duis do pariatur amet esse excepteur ex irure ipsum irure velit aute irure commodo.",
+                "type": "LINK"
+            }
+        ]
+    },
+    {
+        "id": "a4a987f6-1b81-43e4-b994-9c0d7ef7b018",
+        "name": "Recipes",
+        "items": [
+            {
+                "id": "37f90d52-620a-4c3d-ad1a-0e339524fd43",
+                "name": "Sixth",
+                "description": "Lorem proident aute elit pariatur labore anim ut officia dolore veniam labore eiusmod occaecat enim.",
+                "type": "RECIPE"
+            }
+        ]
+    },
+    {
+        "id": "07cc8fed-fd99-4f7b-81a6-b2b02f3fe46b",
+        "name": "Misc",
+        "items": [
+            {
+                "id": "2ff35c15-290a-4adb-acfd-0e575a143ed3",
+                "name": "Seventh",
+                "description": "Duis non et officia non occaecat ipsum eiusmod nisi est exercitation pariatur reprehenderit eiusmod.",
+                "type": "RECIPE"
+            },
+            {
+                "id": "f1476ce2-ad90-4cee-be4f-446b8f162203",
+                "name": "Eighth",
+                "description": "Fugiat dolor non incididunt et nostrud minim aliqua aliqua irure duis nostrud exercitation pariatur.",
+                "type": "RECIPE"
+            }
+        ]
+    }
+]
