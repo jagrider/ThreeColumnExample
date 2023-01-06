@@ -13,33 +13,22 @@ struct ContentView: View {
     
     var body: some View {
         NavigationSplitView(columnVisibility: $showSidebar) {
+            // MARK: Left Column
             SidebarView()
                 .navigationSplitViewColumnWidth(min: 200, ideal: 250, max: 300) // Modify these with your desired sidebar widths
             
         } content: {
+            // MARK: Center Column
             VStack {
-                Text("Middle Column")
-            }
-            .frame(minWidth: .zero, maxWidth: 300, maxHeight: .infinity)
-            .fixedSize()
-            .toolbar {
-                Text("Toolbar 1")
+                Text("")
             }
             .navigationSplitViewColumnWidth(min: 200, ideal: 250, max: 300)
-            
-        } detail: {
-            VStack(alignment: .center) {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
-            }
-            .padding()
-            .toolbar {
-                Text("Toolbar 2")
-            }
-        }
 
+        } detail: {
+            // MARK: Right Column
+            EmptyView()
+                .navigationSplitViewColumnWidth(min: 200, ideal: 250, max: 300)
+        }
     }
 }
 

@@ -11,18 +11,29 @@ struct SidebarView: View {
     @EnvironmentObject var appState: AppState
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 10) {
             List {
                 Section("Folders") {
                     ForEach(appState.folders) { folder in
-                        HStack {
-                            Image(systemName: "folder")
-                            Text(folder.name)
+                        NavigationLink {
+                            FolderItemsListView(folder: folder)
+                        } label: {
+                            SidebarListItemView(folder: folder)
                         }
+
                     }
                 }
             }
             .listStyle(.sidebar)
+        }
+        .toolbar {
+            Spacer()
+            Button {
+                print("Add folder")
+            } label: {
+                Image(systemName: "plus")
+                    .font(.title2)
+            }
         }
     }
 }
