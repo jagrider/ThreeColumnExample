@@ -10,30 +10,26 @@ import SwiftUI
 struct FolderItemsListView: View {
     
     //@EnvironmentObject var appState: AppState
+    
     let folder: TCEFolder
+    @Binding var selectedItem: TCEItem.ID?
     
     var body: some View {
         VStack(alignment: .leading) {
-            List(folder.items) { item in
-                NavigationLink {
-                    FolderItemDetailView(item: item)
-                } label: {
-                    HStack {
-                        Text(item.name)
-                            .font(.headline)
-                            .fontWeight(.medium)
-                    }
-                    .padding(.vertical, 10)
+            List(folder.items, selection: $selectedItem) { item in
+                HStack {
+                    Text(item.name)
+                        .font(.headline)
+                        .fontWeight(.medium)
                 }
+                .padding(.vertical, 10)
 
             }
+            .toolbar {
+                Text(folder.name)
+                    .font(.headline)
+            }
         }
-        .toolbar {
-            Text(folder.name)
-                .font(.headline)
-        }
-        
-        
     }
 }
 
@@ -47,6 +43,6 @@ struct FolderListView_Previews: PreviewProvider {
     ]
     
     static var previews: some View {
-        FolderItemsListView(folder: TCEFolder(id: UUID(), name: "Example Folder", items: exampleItems))
+        FolderItemsListView(folder: TCEFolder(id: UUID(), name: "Example Folder", items: exampleItems), selectedItem: .constant(nil))
     }
 }

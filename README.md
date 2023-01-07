@@ -7,6 +7,7 @@ Three column example application for macOS using SwiftUI
 [x] Navigation on leading sidebar
 [x] Navigation on content sidebar
 [x] Detail view
+[x] Autoselect first folder / item in sidebars
 [] Integrate toolbar items to add folders
 [] Folder CRUD
   [] Add via toolbar item

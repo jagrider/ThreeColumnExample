@@ -45,6 +45,18 @@ class AppState: ObservableObject {
         UserDefaults.standard.set(encoded, forKey: dataSaveKey) // dataSaveKey -> Constants.swift
     }
     
+    func folder(id folderId: TCEFolder.ID) -> TCEFolder? {
+        return self.folders.first { $0.id == folderId }
+    }
+    
+    func item(id itemId: TCEItem.ID, inFolder folderId: TCEFolder.ID) -> TCEItem? {
+        guard let folder = (self.folders.first { $0.id == folderId }) else {
+            return nil
+        }
+        
+        return folder.items.first { $0.id == itemId}
+    }
+    
     // Creates a new TCEFolder that can store items
     func createFolder(withName name: String) -> TCEFolder {
         let newFolder = TCEFolder(id: UUID(), name: name)

@@ -9,23 +9,23 @@ import SwiftUI
 
 struct FolderItemDetailView: View {
     
-    let item: TCEItem
+    let item: TCEItem?
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text(item.name)
+            Text(item!.name)
                 .font(.largeTitle)
                 .fontWeight(.bold)
             
-            Text(item.description)
+            Text(item!.description)
                 .font(.headline)
                 
-            Text(item.type.rawValue)
+            Text(item!.type.rawValue)
                 .opacity(0.6)
         }
         .toolbar {
             Spacer()
-            Text(item.name)
+            Text(item!.name)
                 .font(.headline)
             Spacer()
         }
