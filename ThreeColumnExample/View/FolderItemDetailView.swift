@@ -23,13 +23,6 @@ struct FolderItemDetailView: View {
             Text(item!.type.rawValue)
                 .opacity(0.6)
         }
-        .toolbar {
-            Spacer()
-            Text(item!.name)
-                .font(.headline)
-            Spacer()
-        }
-        
     }
 }
 

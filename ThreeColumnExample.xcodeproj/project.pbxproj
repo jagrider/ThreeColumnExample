@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9621BFC12A09FCEA0036CC00 /* FolderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9621BFC02A09FCEA0036CC00 /* FolderContentView.swift */; };
+		9621BFC32A0A01F80036CC00 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9621BFC22A0A01F80036CC00 /* ToolbarView.swift */; };
 		9681F938296258D7006402C6 /* ThreeColumnExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681F937296258D7006402C6 /* ThreeColumnExampleApp.swift */; };
 		9681F93A296258D7006402C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681F939296258D7006402C6 /* ContentView.swift */; };
 		9681F93C296258D8006402C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9681F93B296258D8006402C6 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9621BFC02A09FCEA0036CC00 /* FolderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderContentView.swift; sourceTree = "<group>"; };
+		9621BFC22A0A01F80036CC00 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		9681F934296258D7006402C6 /* ThreeColumnExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeColumnExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9681F937296258D7006402C6 /* ThreeColumnExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeColumnExampleApp.swift; sourceTree = "<group>"; };
 		9681F939296258D7006402C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				96E0250A2967E07F008846FA /* SidebarListItemView.swift */,
 				96E0250C2967E3A5008846FA /* FolderItemsListView.swift */,
 				96E0250E2967E845008846FA /* FolderItemDetailView.swift */,
+				9621BFC02A09FCEA0036CC00 /* FolderContentView.swift */,
+				9621BFC22A0A01F80036CC00 /* ToolbarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,8 +230,10 @@
 				9681F95C29629502006402C6 /* AppState.swift in Sources */,
 				9681F93A296258D7006402C6 /* ContentView.swift in Sources */,
 				96E0250F2967E845008846FA /* FolderItemDetailView.swift in Sources */,
+				9621BFC12A09FCEA0036CC00 /* FolderContentView.swift in Sources */,
 				9681F951296288B1006402C6 /* Bundle+Extension.swift in Sources */,
 				9681F938296258D7006402C6 /* ThreeColumnExampleApp.swift in Sources */,
+				9621BFC32A0A01F80036CC00 /* ToolbarView.swift in Sources */,
 				9681F94A29626106006402C6 /* SidebarView.swift in Sources */,
 				9681F94D29627F62006402C6 /* TCEItem.swift in Sources */,
 				9681F95529628A59006402C6 /* TCEFolder.swift in Sources */,

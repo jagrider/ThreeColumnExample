@@ -25,10 +25,6 @@ struct FolderItemsListView: View {
                 .padding(.vertical, 10)
 
             }
-            .toolbar {
-                Text(folder.name)
-                    .font(.headline)
-            }
         }
     }
 }
